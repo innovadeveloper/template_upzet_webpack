@@ -1,0 +1,26 @@
+// 
+// authentication.scss
+//
+.bg-pattern {
+    // background-image: url("../images/bg.jpg");
+
+    // background-image: url("@images/bg.jpg"); // http://localhost:9001/assets/assets/resources/bg_fbb85a0c2700839b84a1.jpg 404 (Not Found)
+    // background-image: url("./assets/images/bg.jpg");    // dont resolve
+    // background-image: url("../assets/resources/bg.jpg");    // dont resolve
+    background-image: url("./assets/images/bg.jpg");    // dont resolve
+
+    // background-image: url("./assets/images/bg.jpg");
+    // background-image: url("../../../assets/images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.auth-logo {
+    &.logo-light {
+        display: $display-none;
+    }
+
+    &.logo-dark {
+        display: $display-block;
+    }
+}
